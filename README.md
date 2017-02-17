@@ -1,20 +1,20 @@
-## config-lite
+## xconfigjs
 
 A super simple & flexible & useful config module.
 
 ### Install
 
-    npm i config-lite --save
+    npm i xconfigjs --save
 
 ### Usage
 
 ```
-var config = require('config-lite');
+var config = require('xconfigjs');
 ```
 
-By default, `require('config-lite')` will bubbling find `config` (or custom) directory from `process.cwd()`.
+By default, `require('xconfigjs')` will bubbling find `config` (or custom) directory from `process.cwd()`.
 
-See [test](https://github.com/nswbmw/config-lite/blob/master/test/test.js).
+See [test](https://github.com/nswbmw/xconfigjs/blob/master/test/test.js).
 
 After v1.0.0, support yaml config file.
 
@@ -42,19 +42,19 @@ module.exports = 'production';
 ```
 node app
 
-require('config-lite'); //=> 'default'
+require('xconfigjs'); //=> 'default'
 ```
 
 ```
 NODE_ENV=test node app
 
-require('config-lite'); //=> 'test'
+require('xconfigjs'); //=> 'test'
 ```
 
 ```
 NODE_ENV=production node app
 
-require('config-lite'); //=> 'production'
+require('xconfigjs'); //=> 'production'
 ```
 
 or:
